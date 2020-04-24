@@ -6,7 +6,7 @@ export class PortfolioPreview extends React.Component {
     render() {
         const { imgURL, title } = this.props;
         return (
-            <div className="portfolio-previews">
+            <div className="col-sm portfolio-previews">
                     <div className="portfolio-preview-image" style={{backgroundImage: 'url("' + imgURL + '")'}}>
                         <div className="translucent-overlay"></div>
                         <div className="portfolio-name">

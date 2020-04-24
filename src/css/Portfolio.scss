@@ -15,9 +15,15 @@
     line-height: 1.875rem;
     letter-spacing: 0.405em;
     color: white;
-    width: 607px;
-    height: 406px;
+    width: 100%;
+    height: 400px;
     z-index: 1;
+}
+
+.divider {
+    width: 5%;
+    height: 4rem;
+    position: relative;
 }
 
 .portfolio-name h3 {
@@ -39,8 +45,8 @@
 
 .portfolio-preview-image {
     position: relative;
-    width: 607px;
-    height: 406px;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     z-index: -99;
@@ -49,15 +55,19 @@
 .portfolio-previews {
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.7s;
+    width: 47.5%;
+    margin-bottom: 2rem;
+    padding: 0;
+    box-sizing: border-box;
     position: relative;
 }
 
 .portfolio-previews:first-child {
-    margin-right: 1.2%;
+    margin-right: 1rem;
 }
 
 .portfolio-previews:last-child {
-    margin-left: 1.2%;
+    margin-left: 1rem;
 }
 
 .portfolio-previews:hover {

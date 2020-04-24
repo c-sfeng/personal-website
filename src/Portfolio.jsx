@@ -10,7 +10,7 @@ export class Portfolio extends React.Component {
         return (
             <div className="portfolio-master">
                 <h2 className="portfolio-title">EXPLORE MY PORTFOLIO</h2>
-                <div className="portfolio-preview-row">
+                <div className="row portfolio-preview-row">
                     <PortfolioPreview imgURL={portfolioOne} title="PERSONAL"/>
                     <PortfolioPreview imgURL={portfolioTwo} title="PROFESSIONAL"/>
                 </div>

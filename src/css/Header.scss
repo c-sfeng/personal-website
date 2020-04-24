@@ -8,8 +8,8 @@
 .navigation-tab {
     font-family: 'Josefin Sans', sans-serif;
     padding-right: 4%;
-    padding-top: 1%;
-    padding-bottom: calc(1% - 0.1em);
+    padding-top: 2rem;
+    padding-bottom: calc(1.4rem - 0.1em);
 }
 
 .navigation-tab a {
@@ -19,6 +19,7 @@
 
 .navigation-tab h4 {
     font-weight: 300;
+    font-size: 1rem;
 }
 
 .current-tab h4 {

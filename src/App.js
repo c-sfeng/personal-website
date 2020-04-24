@@ -13,18 +13,16 @@ import { Footer } from './Footer.jsx';
 function App() {
   return (
     <div className="App">
-      <div className="norm-container">
+      <div className="container">
         <Header/>
       </div>
-      <div className="norm-container">
-        <div className="sub-container">
-          <PrimaryBanner imgURL={primaryImage} 
-            title="CLARENCE FENG"
-            subtitle="SOFTWARE ENGINEER & PHOTOGRAPHER"/>
-        </div>
+      <div className="container">
+        <PrimaryBanner imgURL={primaryImage} 
+          title="CLARENCE FENG"
+          subtitle="SOFTWARE ENGINEER & PHOTOGRAPHER"/>
       </div>
-      <div className="norm-container body-container">
-        <div className="sub-container">
+      <div className="container body-container">
+        <div className="">
           <p className="primary-text">
             Hi, I’m Clarence, a 2nd year Science and Computer Science
             student at the University of New South Wales, majoring in Mathematics and Computer Science. 
@@ -42,23 +40,23 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="norm-container body-container">
-        <div className="sub-container">
+      <div className="container body-container">
+        <div className="">
           <Portfolio/>
         </div>  
       </div>
-      <div className="norm-container body-container">
-        <div className="sub-container">
+      <div className="container body-container">
+        <div className="">
           <Banner imgURL={projectsImage} title="PROJECTS" translucent={true}/>
         </div>
       </div>
-      <div className="norm-container body-container">
-        <div className="sub-container">
+      <div className="container body-container">
+        <div className="">
           <Banner imgURL={resumeImage} title="RESUME" translucent={false}/>
         </div>
       </div>
-      <div className="norm-container end-container">
-        <div className="sub-container">
+      <div className="container end-container">
+        <div className="">
           <Footer/>
         </div>
       </div>
