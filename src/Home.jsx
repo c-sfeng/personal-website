@@ -41,10 +41,10 @@ function Home() {
         <Portfolio/>
       </div>
       <div className="container body-container">
-        <Banner imgURL={projectsImage} title="PROJECTS" translucent={true}/>
+        <Banner imgURL={projectsImage} url="/projects" title="PROJECTS" translucent={true}/>
       </div>
       <div className="container body-container">
-        <Banner imgURL={resumeImage} title="RESUME" translucent={false}/>
+        <Banner imgURL={resumeImage} url="/resume" title="RESUME" translucent={false}/>
       </div>
       <div className="container end-container">
         <Footer/>
