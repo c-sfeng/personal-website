@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './css/Header.scss';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { HashRouter as Router, Link } from 'react-router-dom';
 
 export class NavTab extends React.Component {
     render () {
