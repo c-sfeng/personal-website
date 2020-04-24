@@ -31,7 +31,7 @@ function App() {
             I am working - passion for photography, design and 
             audio-visual production. studying computer science.
             interest in education, history and a while load of random 
-            shit Lorem ipsum dolor sit amet, consectetur adipiscing 
+            stuff. this is placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit. Phasellus sit amet gravida magna, a egestas leo. 
             Aliquam ornare turpis vel fringilla facilisis. Nulla id 
             suscipit urna. Integer finibus ac nulla quis pharetra. 
