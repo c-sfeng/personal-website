@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.scss';
-import App from './App.jsx';
+import ResumePage from './ResumePage.jsx';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ResumePage />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('resume')
 );
 
 // If you want your app to work offline and load faster, you can change
