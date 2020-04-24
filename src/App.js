@@ -27,19 +27,16 @@ function App() {
         <div className="sub-container">
           <p className="primary-text">
             Hi, I’m Clarence, a 2nd year Science and Computer Science
-            student at the University of New South Wales. Currently,
-            I am working - passion for photography, design and 
-            audio-visual production. studying computer science.
-            interest in education, history and a while load of random 
-            stuff. this is placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit. Phasellus sit amet gravida magna, a egestas leo. 
-            Aliquam ornare turpis vel fringilla facilisis. Nulla id 
-            suscipit urna. Integer finibus ac nulla quis pharetra. 
-            Nullam sagittis lectus eget elementum molestie. 
-            Phasellus eget convallis odio, ut interdum ante. 
-            Proin id dui nibh. Proin scelerisque turpis ligula, 
-            blandit tristique lectus vestibulum at. Donec a purus 
-            dignissim, dapibus libero quis, pretium ipsum.
+            student at the University of New South Wales. When I'm not
+            studying or working, I'll be reading or doing photography.
+            I maintain a personal and professional portfolio in 
+            photography, and I'm exploring design and audio-visual
+            production as a Media Director in UNSW's CSESoc. In the future,
+            I hope to work in education, but my current focus is on
+            software engineering. Currently, I am working as a front and back-end intern at Intuit
+            Australia, and I'm also working on some side projects like this website. 
+            If you'd like to know more about what I've done, it's all below.
+            Thanks for visiting!
           </p>
         </div>
       </div>
