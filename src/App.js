@@ -13,17 +13,17 @@ import { Footer } from './Footer.jsx';
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="norm-container">
         <Header/>
       </div>
-      <div className="container">
+      <div className="norm-container">
         <div className="sub-container">
           <PrimaryBanner imgURL={primaryImage} 
             title="CLARENCE FENG"
             subtitle="SOFTWARE ENGINEER & PHOTOGRAPHER"/>
         </div>
       </div>
-      <div className="container body-container">
+      <div className="norm-container body-container">
         <div className="sub-container">
           <p className="primary-text">
             Hi, I’m Clarence, a 2nd year Science and Computer Science
@@ -42,22 +42,22 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="container body-container">
+      <div className="norm-container body-container">
         <div className="sub-container">
           <Portfolio/>
         </div>  
       </div>
-      <div className="container body-container">
+      <div className="norm-container body-container">
         <div className="sub-container">
           <Banner imgURL={projectsImage} title="PROJECTS" translucent={true}/>
         </div>
       </div>
-      <div className="container body-container">
+      <div className="norm-container body-container">
         <div className="sub-container">
           <Banner imgURL={resumeImage} title="RESUME" translucent={false}/>
         </div>
       </div>
-      <div className="container end-container">
+      <div className="norm-container end-container">
         <div className="sub-container">
           <Footer/>
         </div>
