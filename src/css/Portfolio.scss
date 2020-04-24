@@ -1,0 +1,66 @@
+.portfolio-title {
+    font-weight: 600;
+    font-size: 1.5625rem;
+    line-height: 200%;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.405em;
+    color: white;
+    width: 607px;
+    height: 406px;
+    z-index: 1;
+}
+
+.portfolio-name h3 {
+    cursor: default;
+}
+
+.portfolio-master {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    height: 476px;
+}
+
+.portfolio-preview-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-preview-image {
+    position: relative;
+    width: 607px;
+    height: 406px;
+    background-size: cover;
+    background-position: center;
+    z-index: -99;
+}
+
+.portfolio-previews {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.7s;
+    position: relative;
+}
+
+.portfolio-previews:first-child {
+    margin-right: 1.2%;
+}
+
+.portfolio-previews:last-child {
+    margin-left: 1.2%;
+}
+
+.portfolio-previews:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}

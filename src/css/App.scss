@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  position: relative;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  margin: 0 14%;
+  overflow: hidden;
+}
+
+.body-container {
+  padding-top: 3%;
+}
+
+.end-container {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.sub-container {
+  position: relative;
+  margin:0 4.5%;
+}
+
+.translucent-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -98;
+  background-color: rgba(132, 132, 132, 0.5);
+}
+
+.primary-text {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  line-height: 200%;
+  letter-spacing: 0.02em;
+  padding: 0 6.5%;
+  text-align: left;
+}

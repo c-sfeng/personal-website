@@ -1,0 +1,39 @@
+.banner-primary {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    height: 530px;
+}
+
+.banner-primary-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+}
+
+.banner-primary-title {
+    font-weight: 600;
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    letter-spacing: 1.6rem;
+    margin: 1%;
+}
+
+.banner-primary-subtitle {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.6rem;
+    margin: 1%;
+}
+
+.banner-primary-image {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    background-size: cover;
+    background-position: center top 840px;
+    z-index: -99;
+}

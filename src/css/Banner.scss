@@ -1,0 +1,47 @@
+.banner-standard {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 200%;
+    letter-spacing: 0.5em;
+    height: 433px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.7s;
+}
+
+.banner-standard:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.banner-standard-white {
+    color: white;
+}
+
+.banner-standard-black {
+    color: black;
+}
+
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    background-size: cover;
+    background-position: center;
+    z-index: -99;
+
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.banner-text-black {
+    position: absolute;
+    margin: 148px;
+}
