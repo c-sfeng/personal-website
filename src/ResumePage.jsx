@@ -1,9 +1,6 @@
 import React from 'react';
 import resume from './assets/Clarence-Feng-CV-April-2020.pdf';
 import './css/App.scss';
-import { PrimaryBanner } from "./PrimaryBanner.jsx";
-import preview from "./assets/preview.png";
-import resumeBanner from "./assets/resume-banner.jpg";
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
