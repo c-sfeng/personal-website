@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.165c2aa4.chunk.css",
-    "main.js": "/me/static/js/main.c7ffcb23.chunk.js",
-    "main.js.map": "/me/static/js/main.c7ffcb23.chunk.js.map",
+    "main.css": "/me/static/css/main.5e2284b5.chunk.css",
+    "main.js": "/me/static/js/main.a1df1972.chunk.js",
+    "main.js.map": "/me/static/js/main.a1df1972.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.c5ef7d3b.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.c5ef7d3b.js.map",
-    "static/js/2.859297c7.chunk.js": "/me/static/js/2.859297c7.chunk.js",
-    "static/js/2.859297c7.chunk.js.map": "/me/static/js/2.859297c7.chunk.js.map",
+    "static/js/2.119eadb2.chunk.js": "/me/static/js/2.119eadb2.chunk.js",
+    "static/js/2.119eadb2.chunk.js.map": "/me/static/js/2.119eadb2.chunk.js.map",
     "7f1b87424ff85e03b069.worker.js": "/me/7f1b87424ff85e03b069.worker.js",
     "7f1b87424ff85e03b069.worker.js.LICENSE.txt": "/me/7f1b87424ff85e03b069.worker.js.LICENSE.txt",
     "7f1b87424ff85e03b069.worker.js.map": "/me/7f1b87424ff85e03b069.worker.js.map",
     "index.html": "/me/index.html",
-    "precache-manifest.63d6528661b8c89f9eae2813aaa63533.js": "/me/precache-manifest.63d6528661b8c89f9eae2813aaa63533.js",
+    "precache-manifest.0e764d88b5bcc80cc030355d94970cc4.js": "/me/precache-manifest.0e764d88b5bcc80cc030355d94970cc4.js",
     "service-worker.js": "/me/service-worker.js",
-    "static/css/main.165c2aa4.chunk.css.map": "/me/static/css/main.165c2aa4.chunk.css.map",
-    "static/js/2.859297c7.chunk.js.LICENSE.txt": "/me/static/js/2.859297c7.chunk.js.LICENSE.txt",
+    "static/css/main.5e2284b5.chunk.css.map": "/me/static/css/main.5e2284b5.chunk.css.map",
+    "static/js/2.119eadb2.chunk.js.LICENSE.txt": "/me/static/js/2.119eadb2.chunk.js.LICENSE.txt",
     "static/media/Clarence-Feng-CV-April-2020.pdf": "/me/static/media/Clarence-Feng-CV-April-2020.c4ea1b53.pdf",
     "static/media/portfolio1.jpg": "/me/static/media/portfolio1.a31fe50d.jpg",
     "static/media/portfolio2.jpg": "/me/static/media/portfolio2.0e4f6521.jpg",
     "static/media/primary.png": "/me/static/media/primary.bce798dc.png",
     "static/media/projects.png": "/me/static/media/projects.9347bb98.png",
+    "static/media/resume-banner.jpg": "/me/static/media/resume-banner.e37c228e.jpg",
     "static/media/resume.png": "/me/static/media/resume.66eeb2e6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c5ef7d3b.js",
-    "static/js/2.859297c7.chunk.js",
-    "static/css/main.165c2aa4.chunk.css",
-    "static/js/main.c7ffcb23.chunk.js"
+    "static/js/2.119eadb2.chunk.js",
+    "static/css/main.5e2284b5.chunk.css",
+    "static/js/main.a1df1972.chunk.js"
   ]
 }
