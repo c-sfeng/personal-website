@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { PortfolioPreview } from "./PortfolioPreview.jsx";
 import portfolioOne from "./assets/portfolio1.jpg";
 import portfolioTwo from "./assets/portfolio2.jpg";

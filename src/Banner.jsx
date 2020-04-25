@@ -1,6 +1,6 @@
-import * as React from "react";
-import './css/Banner.scss';
+import React from "react";
 import { Link } from 'react-router-dom';
+import './css/Banner.scss';
 
 export class Banner extends React.Component {
     render () {

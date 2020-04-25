@@ -1,13 +1,13 @@
 import React from 'react';
-import primaryImage from './assets/primary.png';
-import projectsImage from './assets/projects.png';
-import resumeImage from './assets/resume.png';
-import './css/App.scss';
 import { PrimaryBanner } from './PrimaryBanner.jsx';
 import { Portfolio } from './Portfolio.jsx';
 import { Banner } from './Banner.jsx';
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
+import primaryImage from './assets/primary.png';
+import projectsImage from './assets/projects.png';
+import resumeImage from './assets/resume.png';
+import './css/App.scss';
 
 function Home() {
   return (

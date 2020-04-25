@@ -1,7 +1,7 @@
-import * as React from "react";
+import React from "react";
+import { Link } from 'react-router-dom';
 import './css/Portfolio.scss';
 import './css/App.scss';
-import { Link } from 'react-router-dom';
 
 export class PortfolioPreview extends React.Component {
     render() {

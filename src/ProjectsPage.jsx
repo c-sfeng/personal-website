@@ -1,9 +1,9 @@
 import React from 'react';
-import projectsBanner from "./assets/projects-banner.jpg";
-import './css/App.scss';
 import { PrimaryBanner } from './PrimaryBanner.jsx';
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
+import projectsBanner from "./assets/projects-banner.jpg";
+import './css/App.scss';
 
 function ProjectsPage() {
     return (

@@ -1,10 +1,10 @@
 import React from 'react';
-import resume from './assets/Clarence-Feng-CV-April-2020.pdf';
-import './css/App.scss';
-import './css/Resume.scss';
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
+import resume from './assets/Clarence-Feng-CV-April-2020.pdf';
+import './css/App.scss';
+import './css/Resume.scss';
 
 class ResumePage extends React.Component {
     constructor() {

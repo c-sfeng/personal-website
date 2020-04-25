@@ -1,9 +1,9 @@
 import React from 'react';
-import galleryBanner from './assets/gallery-banner.jpg';
-import './css/App.scss';
 import { PrimaryBanner } from './PrimaryBanner.jsx';
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
+import galleryBanner from './assets/gallery-banner.jpg';
+import './css/App.scss';
 
 function GalleryPage() {
     return (
