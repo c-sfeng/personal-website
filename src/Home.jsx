@@ -34,7 +34,6 @@ function Home() {
           photography, and I'm exploring design, film-making and audio-visual
           production not just in a personal capacity, but also as a Media Director in UNSW's Computer Science 
           and Engineering Society. If you'd like to know more about what I've done, you'll find more details below.
-          Thanks for visiting!
         </p>
       </div>
       <div className="container body-container">

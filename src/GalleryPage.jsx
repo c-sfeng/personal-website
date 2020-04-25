@@ -1,7 +1,5 @@
 import React from 'react';
-import primaryImage from './assets/primary.png';
-import projectsImage from './assets/projects.png';
-import resumeImage from './assets/resume.png';
+import galleryBanner from './assets/gallery-banner.jpg';
 import './css/App.scss';
 import { PrimaryBanner } from './PrimaryBanner.jsx';
 import { Header } from './Header.jsx';
@@ -13,7 +11,11 @@ function GalleryPage() {
             <div className="container">
                 <Header selected={3}/>
             </div>
-            <p>test</p>
+            <div className="container">
+                <PrimaryBanner imgURL={galleryBanner}
+                    title="GALLERY"
+                    subtitle=""/>
+            </div>
             <div className="container end-container">
                 <Footer/>
             </div>
