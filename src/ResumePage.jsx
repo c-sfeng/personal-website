@@ -35,10 +35,6 @@ class ResumePage extends React.Component {
         window.removeEventListener("resize", this.updateDimensions.bind(this));
     }
 
-    handleClick() {
-
-    }
-
     render() {
         return (
             <div className="App">

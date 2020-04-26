@@ -43,5 +43,46 @@
 
 .banner-text-black {
     position: absolute;
-    margin: 12rem 0 12rem 11rem;
+    margin: 20% 0 20% 11rem;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .banner-text {
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    .banner-text {
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: 1rem;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .banner-text {
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner-text-black {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        margin: 0;
+    }
+
+    .banner-text-black h2 {
+        color: white;
+        text-shadow: -0.9px 0 gray, 0 0.9px gray, 0.9px 0 gray, 0 -0.9px gray;
+    }
 }
