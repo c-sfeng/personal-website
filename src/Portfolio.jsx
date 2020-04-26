@@ -1,18 +1,23 @@
 import React from "react";
 import { PortfolioPreview } from "./PortfolioPreview.jsx";
-import portfolioOne from "./assets/portfolio1.jpg";
-import portfolioTwo from "./assets/portfolio2.jpg";
 import './css/Portfolio.scss';
 import './css/App.scss';
+import content from './assets/content.json';
 
 export class Portfolio extends React.Component {
     render () {
         return (
             <div className="portfolio-master">
-                <h2 className="portfolio-title">EXPLORE MY PORTFOLIO</h2>
+                <h2 className="portfolio-title">{content.home.portfolioExplore}</h2>
                 <div className="row portfolio-preview-row">
-                    <PortfolioPreview imgURL={portfolioOne} url="/gallery#personal" title="PERSONAL"/>
-                    <PortfolioPreview imgURL={portfolioTwo} url="/gallery#professional" title="PROFESSIONAL"/>
+                    <PortfolioPreview 
+                        imgURL={require(`${content.home.images.portfolioOne}`)} 
+                        url={content.urls.galleryPersonalURL} 
+                        title={content.home.portfolioPersonal}/>
+                    <PortfolioPreview 
+                        imgURL={require(`${content.home.images.portfolioTwo}`)} 
+                        url={content.urls.galleryProfessionalURL} 
+                        title={content.home.portfolioProfessional}/>
                 </div>
             </div>
         );

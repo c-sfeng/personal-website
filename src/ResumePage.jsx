@@ -2,9 +2,9 @@ import React from 'react';
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
-import resume from './assets/Clarence-Feng-CV-April-2020.pdf';
 import './css/App.scss';
 import './css/Resume.scss';
+import content from './assets/content.json';
 
 class ResumePage extends React.Component {
     constructor() {
@@ -39,25 +39,25 @@ class ResumePage extends React.Component {
         return (
             <div className="App">
                 <div className="container">
-                    <Header selected={2}/>
+                    <Header selected={4}/>
                 </div>
                 <div className="container-xl body-container" onClick={this.handleClick}>
-                    <a className="resume-download" href={resume} download>
+                    <a className="resume-download" href={require(`${content.files.resume}`)} download>
                         <Document 
                             className="resume"
-                            loading="Loading resume..."
-                            file={resume} 
+                            loading={content.resume.loading}
+                            file={require(`${content.files.resume}`)} 
                             onLoadError={console.error}>
                             <Page 
                                 pageNumber={1} 
-                                loading="Loading resume..."
+                                loading={content.resume.loading}
                                 width={this.state.width}/>
                         </Document>
                     </a>
                 </div>
                 <div className="container body-container resume-help primary-text">
-                    <a href={resume} download>
-                        Download
+                    <a href={require(`${content.files.resume}`)} download>
+                        {content.resume.download}
                     </a>
                 </div>
                 <div className="container end-container">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavTab } from './NavTab.jsx';
 import './css/Header.scss';
+import content from './assets/content.json';
 
 export class Header extends React.Component {
     render() {
@@ -8,37 +9,37 @@ export class Header extends React.Component {
         if (selected === 1) {
             return(
                 <div className="navigation-norm">
-                    <NavTab title='HOME' url='/' selected={true}/>
-                    <NavTab title='RESUME' url='/resume' selected={false}/>
-                    <NavTab title='GALLERY' url='/gallery' selected={false}/>
-                    <NavTab title='PROJECTS' url='/projects' selected={false}/>
+                    <NavTab title={content.header.home} url={content.urls.homeURL} selected={true}/>
+                    <NavTab title={content.header.gallery} url={content.urls.galleryURL} selected={false}/>
+                    <NavTab title={content.header.projects} url={content.urls.projectsURL} selected={false}/>
+                    <NavTab title={content.header.resume} url={content.urls.resumeURL} selected={false}/>
                 </div>
             );
         } else if (selected === 2) {
             return(
                 <div className="navigation-norm">
-                    <NavTab title='HOME' url='/' selected={false}/>
-                    <NavTab title='RESUME' url='/resume' selected={true}/>
-                    <NavTab title='GALLERY' url='/gallery' selected={false}/>
-                    <NavTab title='PROJECTS' url='/projects' selected={false}/>
+                    <NavTab title={content.header.home} url={content.urls.homeURL} selected={false}/>
+                    <NavTab title={content.header.gallery} url={content.urls.galleryURL} selected={true}/>
+                    <NavTab title={content.header.projects} url={content.urls.projectsURL} selected={false}/>
+                    <NavTab title={content.header.resume} url={content.urls.resumeURL} selected={false}/>
                 </div>
             );
         } else if (selected === 3) {
             return(
                 <div className="navigation-norm">
-                    <NavTab title='HOME' url='/' selected={false}/>
-                    <NavTab title='RESUME' url='/resume' selected={false}/>
-                    <NavTab title='GALLERY' url='/gallery' selected={true}/>
-                    <NavTab title='PROJECTS' url='/projects' selected={false}/>
+                    <NavTab title={content.header.home} url={content.urls.homeURL} selected={false}/>
+                    <NavTab title={content.header.gallery} url={content.urls.galleryURL} selected={false}/>
+                    <NavTab title={content.header.projects} url={content.urls.projectsURL} selected={true}/>
+                    <NavTab title={content.header.resume} url={content.urls.resumeURL} selected={false}/>
                 </div>
             );
         } else if (selected === 4) {
             return(
                 <div className="navigation-norm">
-                    <NavTab title='HOME' url='/' selected={false}/>
-                    <NavTab title='RESUME' url='/resume' selected={false}/>
-                    <NavTab title='GALLERY' url='/gallery' selected={false}/>
-                    <NavTab title='PROJECTS' url='/projects' selected={true}/>
+                    <NavTab title={content.header.home} url={content.urls.homeURL} selected={false}/>
+                    <NavTab title={content.header.gallery} url={content.urls.galleryURL} selected={false}/>
+                    <NavTab title={content.header.projects} url={content.urls.projectsURL} selected={false}/>
+                    <NavTab title={content.header.resume} url={content.urls.resumeURL} selected={true}/>
                 </div>
             );
         }

@@ -11,6 +11,7 @@ import ResumePage from "./ResumePage.jsx";
 import GalleryPage from "./GalleryPage.jsx";
 import ProjectsPage from "./ProjectsPage.jsx";
 import './css/App.scss';
+import content from './assets/content.json';
 
 const trackingId = "UA-164566626-1"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
@@ -34,17 +35,17 @@ function App() {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/">
+          <Route exact path={content.urls.homeURL}>
             <Home />
           </Route>
-          <Route exact path="/resume">
-            <ResumePage />
-          </Route>
-          <Route exact path="/gallery">
+          <Route exact path={content.urls.galleryURL}>
             <GalleryPage />
           </Route>
-          <Route exact path="/projects">
+          <Route exact path={content.urls.projectsURL}>
             <ProjectsPage />
+          </Route>
+          <Route exact path={content.urls.resumeURL}>
+            <ResumePage />
           </Route>
         </Switch>
       </div>
