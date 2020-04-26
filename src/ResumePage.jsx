@@ -61,7 +61,7 @@ class ResumePage extends React.Component {
                 </div>
                 <div className="container body-container resume-help primary-text">
                     <a href={resume} download>
-                        Click on the resume to download.
+                        Download
                     </a>
                 </div>
                 <div className="container end-container">
