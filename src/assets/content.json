@@ -17,9 +17,9 @@
         "portfolioPersonal": "PERSONAL",
         "portfolioProfessional": "PROFESSIONAL",
         "images": {
-            "primaryImage": "./assets/primary.png",
-            "projectsImage": "./assets/projects.png",
-            "resumeImage": "./assets/resume.png",
+            "primaryImage": "./assets/primary.jpg",
+            "projectsImage": "./assets/projects.jpg",
+            "resumeImage": "./assets/resume.jpg",
             "portfolioOne": "./assets/portfolio1.jpg",
             "portfolioTwo": "./assets/portfolio2.jpg"
         }
