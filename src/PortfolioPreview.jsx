@@ -39,7 +39,7 @@ export class PortfolioPreview extends React.Component {
         return (
             <div className="container col-sm portfolio-previews" style={{height: this.state.height + 'px'}}>
                 <Link to={url} style={{textDecoration: "none"}}>
-                        <div className="portfolio-preview-image" style={{backgroundImage: 'url("' + imgURL + '")'}}>
+                        <div className="portfolio-preview-image" style={{backgroundImage: 'url("' + require(`${imgURL}`) + '")'}}>
                             <div className="translucent-overlay"></div>
                             <div className="portfolio-name">
                                 <h3>{title} </h3>

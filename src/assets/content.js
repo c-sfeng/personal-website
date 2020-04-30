@@ -1,4 +1,4 @@
-{
+export const content = {
     "header": {
         "home": "HOME",
         "gallery": "GALLERY",

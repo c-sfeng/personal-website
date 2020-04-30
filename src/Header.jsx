@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavTab } from './NavTab.jsx';
 import './css/Header.scss';
-import content from './assets/content.json';
+import { content } from './assets/content';
 
 export class Header extends React.Component {
     render() {

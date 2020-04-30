@@ -11,7 +11,7 @@ import test6 from "./assets/gallery/gallery-test-6.jpg";
 import test7 from "./assets/gallery/gallery-test-7.jpg";
 import './css/App.scss';
 import './css/GalleryPage.scss';
-import content from "./assets/content.json";
+import { content } from "./assets/content";
 
 function GalleryPage() {
     return (
@@ -20,7 +20,7 @@ function GalleryPage() {
                 <Header selected={2}/>
             </div>
             <div className="container">
-                <PrimaryBanner imgURL={require(`${content.gallery.images.primaryImage}`)}
+                <PrimaryBanner imgURL={content.gallery.images.primaryImage}
                     title={content.header.gallery}
                     subtitle={content.gallery.gallerySubtitle}/>
             </div>

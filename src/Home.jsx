@@ -4,7 +4,7 @@ import { Portfolio } from './Portfolio.jsx';
 import { Banner } from './Banner.jsx';
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
-import content from './assets/content.json';
+import { content } from './assets/content';
 import './css/App.scss';
 
 function Home() {
@@ -14,7 +14,8 @@ function Home() {
         <Header selected={1}/>
       </div>
       <div className="container">
-        <PrimaryBanner imgURL={require(`${content.home.images.primaryImage}`)} 
+        <PrimaryBanner 
+          imgURL={content.home.images.primaryImage} 
           title={content.home.primaryTitle}
           subtitle={content.home.primarySubtitle}/>
       </div>
@@ -30,10 +31,11 @@ function Home() {
         <Portfolio/>
       </div>
       <div className="container body-container">
-        <Banner imgURL={require(`${content.home.images.projectsImage}`)} url={content.urls.projectsURL} title="PROJECTS" translucent={true}/>
+        {console.log(content.home.images.projectsImage)}
+        <Banner imgURL={content.home.images.projectsImage} url={content.urls.projectsURL} title="PROJECTS" translucent={true}/>
       </div>
       <div className="container body-container">
-        <Banner imgURL={require(`${content.home.images.resumeImage}`)} url={content.urls.resumeURL} title="RESUME" translucent={false}/>
+        <Banner imgURL={content.home.images.resumeImage} url={content.urls.resumeURL} title="RESUME" translucent={false}/>
       </div>
       <div className="container end-container">
         <Footer/>

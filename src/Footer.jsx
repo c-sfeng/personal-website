@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Footer.scss';
-import content from './assets/content.json';
+import { content } from './assets/content';
 
 export class Footer extends React.Component {
     render() {

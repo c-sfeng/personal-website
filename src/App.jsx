@@ -11,7 +11,7 @@ import ResumePage from "./ResumePage.jsx";
 import GalleryPage from "./GalleryPage.jsx";
 import ProjectsPage from "./ProjectsPage.jsx";
 import './css/App.scss';
-import content from './assets/content.json';
+import { content } from './assets/content';
 
 const trackingId = "UA-164566626-1"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);

@@ -4,7 +4,7 @@ import { Footer } from './Footer.jsx';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 import './css/App.scss';
 import './css/Resume.scss';
-import content from './assets/content.json';
+import { content } from './assets/content';
 
 class ResumePage extends React.Component {
     constructor() {
@@ -42,11 +42,11 @@ class ResumePage extends React.Component {
                     <Header selected={4}/>
                 </div>
                 <div className="container-xl body-container" onClick={this.handleClick}>
-                    <a className="resume-download" href={require(`${content.files.resume}`)} download>
+                    <a className="resume-download" href={require(`${"./assets/Clarence-Feng-CV-April-2020.pdf"}`)} download>
                         <Document 
                             className="resume"
                             loading={content.resume.loading}
-                            file={require(`${content.files.resume}`)} 
+                            file={require(`${"./assets/Clarence-Feng-CV-April-2020.pdf"}`)} 
                             onLoadError={console.error}>
                             <Page 
                                 pageNumber={1} 
@@ -56,7 +56,7 @@ class ResumePage extends React.Component {
                     </a>
                 </div>
                 <div className="container body-container resume-help primary-text">
-                    <a href={require(`${content.files.resume}`)} download>
+                    <a href={require(`${"./assets/Clarence-Feng-CV-April-2020.pdf"}`)} download>
                         {content.resume.download}
                     </a>
                 </div>

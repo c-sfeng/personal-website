@@ -3,7 +3,7 @@ import { PrimaryBanner } from './PrimaryBanner.jsx';
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
 import './css/App.scss';
-import content from "./assets/content.json";
+import { content } from "./assets/content";
 
 function ProjectsPage() {
     return (
@@ -12,7 +12,7 @@ function ProjectsPage() {
                 <Header selected={3}/>
             </div>
             <div className="container">
-                <PrimaryBanner imgURL={require(`${content.projects.images.primaryImage}`)}
+                <PrimaryBanner imgURL={content.projects.images.primaryImage}
                     title={content.header.projects}
                     subtitle={content.projects.projectsSubtitle}/>
             </div>
