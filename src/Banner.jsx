@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/Banner.scss';
 
@@ -28,31 +28,24 @@ export class Banner extends React.Component {
 
     render () {
         const { imgURL, url, title, translucent } = this.props;
-        if (translucent === true) {
-            return (
+        return (
+            <div className="container body-container">
                 <Link to={url} style={{textDecoration: "none"}}>
-                    <div className="banner-standard banner-standard-white" style={{height: this.state.height + 'px'}}>
+                    <div 
+                        className={translucent ? "banner-standard banner-standard-white" : "banner-standard banner-standard-black"}
+                        style={{height: this.state.height + 'px'}}
+                    >
                         <div className="banner-image" style={{backgroundImage: 'url("' + require(`${imgURL}`) + '")'}}>
-                            <div className="translucent-overlay"></div>
-                            <div className="banner-text">
-                                <h2>{title}</h2>
+                            {translucent && <div className="translucent-overlay"></div>}
+                            <div className={translucent ? "banner-text" : "banner-text-black"}>
+                                <h2>
+                                    {title}
+                                </h2>
                             </div>
                         </div>
                     </div>
                 </Link>
-            );
-        } else {
-            return (
-                <Link to={url} style={{textDecoration: "none"}}>
-                    <div className="banner-standard banner-standard-black" style={{height: this.state.height + 'px'}}>
-                        <div className="banner-image" style={{backgroundImage: 'url("' + require(`${imgURL}`) + '")'}}>
-                            <div className="banner-text-black">
-                                <h2>{title}</h2>
-                            </div>
-                        </div>
-                    </div>
-                </Link>
-            );
-        }
+            </div>
+        );
     }
 }

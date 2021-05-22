@@ -1,6 +1,6 @@
 import React from 'react';
-import { Header } from './Header.jsx';
-import { Footer } from './Footer.jsx';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 import './css/App.scss';
 import './css/Resume.scss';
@@ -36,17 +36,17 @@ class ResumePage extends React.Component {
     }
 
     render() {
+        document.title = 'Resume | Clarence Feng';
+
         return (
             <div className="App">
-                <div className="container">
-                    <Header selected={4}/>
-                </div>
+                <Header selected={4}/>
                 <div className="container-xl body-container" onClick={this.handleClick}>
-                    <a className="resume-download" href={require(`${"./assets/Clarence-Feng-CV-April-2020.pdf"}`)} download>
+                    <a className="resume-download" href={require(`${"./assets/Clarence-Feng-CV-May-2021.pdf"}`)} download>
                         <Document 
                             className="resume"
                             loading={content.resume.loading}
-                            file={require(`${"./assets/Clarence-Feng-CV-April-2020.pdf"}`)} 
+                            file={require(`${"./assets/Clarence-Feng-CV-May-2021.pdf"}`)} 
                             onLoadError={console.error}>
                             <Page 
                                 pageNumber={1} 
@@ -56,13 +56,11 @@ class ResumePage extends React.Component {
                     </a>
                 </div>
                 <div className="container body-container resume-help primary-text">
-                    <a href={require(`${"./assets/Clarence-Feng-CV-April-2020.pdf"}`)} download>
+                    <a href={require(`${"./assets/Clarence-Feng-CV-May-2021.pdf"}`)} download>
                         {content.resume.download}
                     </a>
                 </div>
-                <div className="container end-container">
-                    <Footer/>
-                </div>
+                <Footer/>
             </div>
         );
     }

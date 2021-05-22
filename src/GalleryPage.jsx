@@ -1,7 +1,7 @@
 import React from 'react';
 import { PrimaryBanner } from './PrimaryBanner.jsx';
-import { Header } from './Header.jsx';
-import { Footer } from './Footer.jsx';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
 import test1 from "./assets/gallery/gallery-test-1.jpg";
 import test2 from "./assets/gallery/gallery-test-2.jpg";
 import test3 from "./assets/gallery/gallery-test-3.jpg";
@@ -13,12 +13,12 @@ import './css/App.scss';
 import './css/GalleryPage.scss';
 import { content } from "./assets/content";
 
-function GalleryPage() {
+const GalleryPage = () => {
+    document.title = 'Gallery | Clarence Feng';
+
     return (
         <div className="App">
-            <div className="container">
-                <Header selected={2}/>
-            </div>
+            <Header selected={2}/>
             <div className="container">
                 <PrimaryBanner imgURL={content.gallery.images.primaryImage}
                     title={content.header.gallery}
@@ -47,9 +47,7 @@ function GalleryPage() {
                     <img src={test7} class="card-img-top"></img>
                 </div>
             </div>
-            <div className="container end-container">
-                <Footer/>
-            </div>
+            <Footer/>
         </div>
     );
 }

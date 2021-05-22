@@ -1,18 +1,18 @@
 import React from 'react';
 import { PrimaryBanner } from './PrimaryBanner.jsx';
-import { Portfolio } from './Portfolio.jsx';
+import Portfolio from './Portfolio.jsx';
 import { Banner } from './Banner.jsx';
-import { Header } from './Header.jsx';
-import { Footer } from './Footer.jsx';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
 import { content } from './assets/content';
 import './css/App.scss';
 
-function Home() {
+const Home = () => {
+  document.title = 'Home | Clarence Feng';
+
   return (
     <div className="App">
-      <div className="container">
-        <Header selected={1}/>
-      </div>
+      <Header selected={1}/>
       <div className="container">
         <PrimaryBanner 
           imgURL={content.home.images.primaryImage} 
@@ -27,19 +27,10 @@ function Home() {
           {content.home.textParagraphTwo}
         </p>
       </div>
-      <div className="container body-container">
-        <Portfolio/>
-      </div>
-      <div className="container body-container">
-        {console.log(content.home.images.projectsImage)}
-        <Banner imgURL={content.home.images.projectsImage} url={content.urls.projectsURL} title="PROJECTS" translucent={true}/>
-      </div>
-      <div className="container body-container">
-        <Banner imgURL={content.home.images.resumeImage} url={content.urls.resumeURL} title="RESUME" translucent={false}/>
-      </div>
-      <div className="container end-container">
-        <Footer/>
-      </div>
+      <Portfolio/>
+      <Banner imgURL={content.home.images.projectsImage} url={content.urls.projectsURL} title="PROJECTS" translucent={true}/>
+      <Banner imgURL={content.home.images.resumeImage} url={content.urls.resumeURL} title="RESUME" translucent={false}/>
+      <Footer/>
     </div>
   );
 }

@@ -33,8 +33,12 @@ export class PrimaryBanner extends React.Component {
         <div className="banner-primary-image" style={{backgroundImage: 'url("' + require(`${imgURL}`) + '")'}}>
           <div className="translucent-overlay"></div>
           <div className="banner-primary-text">
-            <h1 className="banner-primary-title">{title}</h1>
-            <h3 className="banner-primary-subtitle">{subtitle}</h3>
+            <h1 className="banner-primary-title">
+              {title}
+            </h1>
+            <h3 className="banner-primary-subtitle">
+              {subtitle}
+            </h3>
           </div>
         </div>
       </div>

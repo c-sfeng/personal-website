@@ -6,13 +6,13 @@ export const content = {
         "resume": "RESUME"
     },
     "footer": {
-        "copyright": "© 2020 Clarence Feng. All rights reserved."
+        "updated": "Last updated in May 2021"
     },
     "home": { 
         "primaryTitle": "CLARENCE FENG",
         "primarySubtitle": "SOFTWARE ENGINEER & PHOTOGRAPHER",
-        "textParagraphOne": "Hi, I’m Clarence, a 2nd year Science and Computer Science student at the University of New South Wales, majoring in Mathematics and Computer Science. I currently work as an academic tutor, and as a front and back-end software enineer intern at Intuit Australia.",
-        "textParagraphTwo": "When I'm not studying or working, I'll be reading, watching films or taking photos. In the future, I hope to turn my hobbies into something more, as I maintain both a personal and professional portfolio in photography. Additionally, I'm exploring design, film-making and audio-visual production not just in a personal capacity, but also as a Media Director in UNSW's Computer Science and Engineering Society. If you'd like to know more about what I've done, you'll find more details below.",
+        "textParagraphOne": "Hi, I’m Clarence, a 3rd year Science and Computer Science student at the University of New South Wales, majoring in Mathematics and Computer Science. Over the summer in 2021, I will be working at Canva as a front-end software developer intern! Currently, I work as a casual academic for UNSW, and I have previously interned at Intuit Australia as a front and back-end software enineer.",
+        "textParagraphTwo": "When I'm not studying or working, I'll be reading, watching films or taking photos. In the future, I hope to turn my hobbies into something more, as I maintain both a personal and professional portfolio in photography. Otherwise, I work as the Secretary of UNSW's Computer Science and Engineering Society. If you'd like to know more about what I've done, you'll find more details below.",
         "portfolioExplore": "EXPLORE MY PORTFOLIO",
         "portfolioPersonal": "PERSONAL",
         "portfolioProfessional": "PROFESSIONAL",
@@ -44,7 +44,7 @@ export const content = {
         "download": "Download"
     },
     "files": {
-        "resume": "./assets/Clarence-Feng-CV-April-2020.pdf"
+        "resume": "./assets/Clarence-Feng-CV-May-2021.pdf"
     },
     "urls": {
         "homeURL": "/",

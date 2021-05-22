@@ -2,12 +2,16 @@ import React from 'react';
 import './css/Footer.scss';
 import { content } from './assets/content';
 
-export class Footer extends React.Component {
-    render() {
-        return(
+const Footer = () => {
+    return (
+        <div className="container end-container">
             <div className="footer-master">
-                <p className="footer-text">{content.footer.copyright}</p>
+                <p className="footer-text">
+                    {content.footer.updated}
+                </p>
             </div>
-        );
-    }
+        </div>
+    );
 }
+
+export default Footer;

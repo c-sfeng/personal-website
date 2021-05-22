@@ -4,9 +4,9 @@ import './css/Portfolio.scss';
 import './css/App.scss';
 import { content } from './assets/content';
 
-export class Portfolio extends React.Component {
-    render () {
-        return (
+const Portfolio = () => {
+    return (
+          <div className="container body-container">
             <div className="portfolio-master">
                 <h2 className="portfolio-title">{content.home.portfolioExplore}</h2>
                 <div className="row portfolio-preview-row">
@@ -20,6 +20,8 @@ export class Portfolio extends React.Component {
                         title={content.home.portfolioProfessional}/>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
+
+export default Portfolio;
