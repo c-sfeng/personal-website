@@ -1,19 +1,19 @@
 import React from 'react';
-import { 
+import {
   HashRouter as Router,
   Switch,
-  Route
-} from "react-router-dom";
-import { createBrowserHistory } from "history";
-import ReactGA from "react-ga";
-import Home from "./Home.jsx";
-import ResumePage from "./ResumePage.jsx";
-import GalleryPage from "./GalleryPage.jsx";
-import ProjectsPage from "./ProjectsPage.jsx";
+  Route,
+} from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
+import Home from './Home';
+import ResumePage from './ResumePage';
+import GalleryPage from './GalleryPage';
+import ProjectsPage from './ProjectsPage';
 import './css/App.scss';
-import { content } from './assets/content';
+import content from './assets/content';
 
-const trackingId = "UA-164566626-1"; // Replace with your Google Analytics tracking ID
+const trackingId = 'UA-164566626-1'; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
 
 const history = createBrowserHistory();
@@ -24,7 +24,7 @@ history.listen((location) => {
   if (location.hash.substring(2)) {
     loc = location.hash.substring(2);
   } else {
-    loc = "home";
+    loc = 'home';
   }
   ReactGA.set({ page: loc }); // Update the user's current page
   ReactGA.pageview(loc); // Record a pageview for the given page
