@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrimaryBanner } from './PrimaryBanner.jsx';
+import PrimaryBanner from './PrimaryBanner.jsx';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import './css/App.scss';
@@ -11,11 +11,9 @@ const ProjectsPage = () => {
     return (
         <div className="App">
             <Header selected={3}/>
-            <div className="container">
-                <PrimaryBanner imgURL={content.projects.images.primaryImage}
-                    title={content.header.projects}
-                    subtitle={content.projects.projectsSubtitle}/>
-            </div>
+            <PrimaryBanner imgURL={content.projects.images.primaryImage}
+                title={content.header.projects}
+                subtitle={content.projects.projectsSubtitle}/>
             <Footer/>
         </div>
     );

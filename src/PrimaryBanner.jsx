@@ -1,35 +1,29 @@
 import React from "react";
 import './css/PrimaryBanner.scss';
 import './css/App.scss';
+import { useState } from "react";
+import { useEffect } from "react";
 
-export class PrimaryBanner extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      height: "530px"
+const PrimaryBanner = (props) => {
+  const { imgURL, title, subtitle } = props;
+  const [height, setHeight] = useState(530);
+
+  const updateDimensions = () => {
+    let containerHeight = document.getElementById('primary-banner').clientWidth * 0.47;
+    setHeight(containerHeight);
+  }
+
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+    return () => {
+      window.removeEventListener("resize", updateDimensions);
     }
-  }
+  }, []);
 
-  updateDimensions() {
-    let containerHeight = document.getElementsByClassName('banner-primary')[0].clientWidth * 0.47;
-    this.setState({
-      height: containerHeight
-    });
-  }
-
-  componentDidMount() {
-    this.updateDimensions();
-    window.addEventListener("resize", this.updateDimensions.bind(this));
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions.bind(this));
-  }
-
-  render() {
-    const { imgURL, title, subtitle } = this.props;
-    return (
-      <div className="banner-primary" id='primary-banner' style={{height: this.state.height + 'px'}}>
+  return (
+    <div className="container">
+      <div className="banner-primary" id='primary-banner' style={{height: height + 'px'}}>
         <div className="banner-primary-image" style={{backgroundImage: 'url("' + require(`${imgURL}`) + '")'}}>
           <div className="translucent-overlay"></div>
           <div className="banner-primary-text">
@@ -42,6 +36,8 @@ export class PrimaryBanner extends React.Component {
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+export default PrimaryBanner;

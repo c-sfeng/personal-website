@@ -1,5 +1,5 @@
 import React from "react";
-import { PortfolioPreview } from "./PortfolioPreview.jsx";
+import PortfolioPreview from "./PortfolioPreview.jsx";
 import './css/Portfolio.scss';
 import './css/App.scss';
 import { content } from './assets/content';

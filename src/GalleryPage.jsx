@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrimaryBanner } from './PrimaryBanner.jsx';
+import PrimaryBanner from './PrimaryBanner.jsx';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import test1 from "./assets/gallery/gallery-test-1.jpg";
@@ -19,11 +19,9 @@ const GalleryPage = () => {
     return (
         <div className="App">
             <Header selected={2}/>
-            <div className="container">
-                <PrimaryBanner imgURL={content.gallery.images.primaryImage}
-                    title={content.header.gallery}
-                    subtitle={content.gallery.gallerySubtitle}/>
-            </div>
+            <PrimaryBanner imgURL={content.gallery.images.primaryImage}
+                title={content.header.gallery}
+                subtitle={content.gallery.gallerySubtitle}/>
             <div className="container body-container card-columns" id="personal">
                 <div class="card">
                     <img src={test1} class="card-img-top"></img>
